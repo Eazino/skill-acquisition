@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Eazino Courses | Skill Acquisition Program 3.0</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "on-background": "#d6e3ff",
+                        "on-secondary-container": "#9fbae6",
+                        "error": "#ffb4ab",
+                        "tertiary-fixed": "#dbe1ff",
+                        "on-error-container": "#ffdad6",
+                        "primary-container": "#d4af37",
+                        "on-error": "#690005",
+                        "surface-dim": "#041329",
+                        "primary-fixed-dim": "#e9c349",
+                        "on-primary": "#3c2f00",
+                        "outline-variant": "#4d4635",
+                        "surface-container": "#112036",
+                        "on-secondary-fixed-variant": "#2d486d",
+                        "secondary-fixed": "#d5e3ff",
+                        "tertiary": "#bfcdff",
+                        "surface-container-low": "#0d1c32",
+                        "on-tertiary-fixed": "#00174b",
+                        "inverse-primary": "#735c00",
+                        "background": "#041329",
+                        "on-primary-fixed": "#241a00",
+                        "on-surface": "#d6e3ff",
+                        "surface-container-lowest": "#010e24",
+                        "outline": "#99907c",
+                        "secondary-container": "#2f4a70",
+                        "surface-bright": "#2c3951",
+                        "on-surface-variant": "#d0c5af",
+                        "on-primary-container": "#554300",
+                        "on-tertiary": "#082b72",
+                        "tertiary-container": "#97b0ff",
+                        "primary-fixed": "#ffe088",
+                        "surface-variant": "#27354c",
+                        "secondary": "#adc8f5",
+                        "secondary-fixed-dim": "#adc8f5",
+                        "tertiary-fixed-dim": "#b4c5ff",
+                        "surface": "#041329",
+                        "surface-tint": "#e9c349",
+                        "on-primary-fixed-variant": "#574500",
+                        "on-tertiary-container": "#254188",
+                        "inverse-on-surface": "#233148",
+                        "on-tertiary-fixed-variant": "#27438a",
+                        "primary": "#D4AF37",
+                        "inverse-surface": "#d6e3ff",
+                        "on-secondary-fixed": "#001c3b",
+                        "surface-container-highest": "#27354c",
+                        "error-container": "#93000a",
+                        "on-secondary": "#133155",
+                        "surface-container-high": "#1c2a41"
+                    },
+                    fontFamily: {
+                        "headline": ["Plus Jakarta Sans"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"]
+                    },
+                    borderRadius: { 
+                        "DEFAULT": "0.5rem", 
+                        "lg": "0.5rem", 
+                        "xl": "1rem", 
+                        "2xl": "1.5rem",
+                        "full": "9999px" 
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .gold-gradient {
+            background: linear-gradient(135deg, #D4AF37 0%, #B8860B 100%);
+        }
+        .gold-glow {
+            box-shadow: 0 0 25px rgba(212, 175, 55, 0.15);
+        }
+        .gold-glow:hover {
+            box-shadow: 0 0 35px rgba(212, 175, 55, 0.25);
+        }
+        .bento-card {
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 1px solid rgba(212, 175, 55, 0.05);
+        }
+        .bento-card:hover {
+            transform: translateY(-4px);
+            border-color: rgba(212, 175, 55, 0.2);
+            background: #1c2a41;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-primary selection:text-on-primary">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-xl border-b border-white/5">
+<div class="flex justify-between items-center px-8 py-5 max-w-7xl mx-auto">
+<div class="text-2xl font-extrabold tracking-tighter text-primary">Eazino Courses</div>
+<div class="hidden md:flex items-center gap-10 font-headline font-semibold text-sm tracking-wide">
+<a class="text-primary" href="#">Home</a>
+<a class="text-on-surface/70 hover:text-primary transition-colors" href="#">Courses</a>
+<a class="text-on-surface/70 hover:text-primary transition-colors" href="#">About</a>
+</div>
+<div class="flex items-center">
+<button class="gold-gradient text-on-primary px-7 py-2.5 rounded-lg font-bold text-sm tracking-tight hover:scale-105 active:scale-95 duration-200 shadow-lg">
+                    Enroll Now
+                </button>
+</div>
+</div>
+</nav>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative min-h-[calc(100vh-80px)] flex items-center px-8 max-w-7xl mx-auto overflow-hidden py-20">
+<div class="grid lg:grid-cols-12 gap-16 items-center">
+<div class="lg:col-span-7 z-10">
+<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 text-primary text-[10px] font-bold tracking-[0.2em] uppercase mb-8 border border-primary/20">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+                        Future-Proof Your Career
+                    </div>
+<h1 class="font-headline text-6xl md:text-8xl font-black tracking-tight text-on-background leading-[0.95] mb-8">Skill Acquisition <span class="text-primary italic">Program</span> 3.0</h1>
+<p class="text-xl md:text-2xl text-secondary/80 mb-12 max-w-2xl leading-relaxed font-medium">"Coding used to be intimidating. Eazino Courses' mentors broke it down into simple, logical steps. I'm now building my own SaaS application."</p>
+<div class="flex flex-col sm:flex-row gap-5">
+<button class="gold-gradient text-on-primary px-12 py-5 rounded-lg text-lg font-extrabold gold-glow transition-all hover:-translate-y-1">
+                            Enroll Now
+                        </button>
+<button class="px-12 py-5 rounded-lg text-lg font-extrabold border-2 border-primary/20 text-primary hover:bg-primary/5 transition-all hover:-translate-y-1">
+                            Explore Curriculum
+                        </button>
+</div>
+<!-- Stats Section -->
+<div class="mt-20 flex flex-wrap gap-12 p-10 bg-surface-container-low/50 rounded-2xl border-l-4 border-primary backdrop-blur-sm">
+<div>
+<div class="text-4xl font-headline font-black text-on-background">15k+</div>
+<div class="text-[10px] text-primary font-bold uppercase tracking-[0.15em] mt-1">Students</div>
+</div>
+<div class="w-px h-12 bg-white/10 hidden sm:block"></div>
+<div>
+<div class="text-4xl font-headline font-black text-on-background">94%</div>
+<div class="text-[10px] text-primary font-bold uppercase tracking-[0.15em] mt-1">Placement</div>
+</div>
+<div class="w-px h-12 bg-white/10 hidden sm:block"></div>
+<div>
+<div class="text-4xl font-headline font-black text-on-background">4.9/5</div>
+<div class="text-[10px] text-primary font-bold uppercase tracking-[0.15em] mt-1">Rating</div>
+</div>
+</div>
+</div>
+<div class="lg:col-span-5 relative">
+<div class="relative z-10 rounded-2xl overflow-hidden shadow-[0_40px_80px_-15px_rgba(0,0,0,0.5)] transform lg:rotate-3 hover:rotate-0 transition-transform duration-700">
+<img alt="Student learning" class="w-full h-[650px] object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8AyiZnbeF3EgrVhNTybzTw1eB-Gkp_Z9S7Z8UQCbC_-W9xclSDWIC1WUMOtQwmbR97r5oGlLl08XB-E_XlAqq6iA2vvgFmMVP76_HqaclvThT6XoSYFHm-d710UxBRrxiBSilZB-CerbMnQkRCTOWbTIFZQ-Aqitt1hibKt61JzXmJHKwSrl2CI3F3femSdIdEr7wC9MWep6emMexpy9Ti0NOA_KiPMcXAqNLuF17mSq9R-ih-EyPzmJybSr-7ftnfZtFAIumsGfS"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent opacity-60"></div>
+</div>
+<!-- Decorative Elements -->
+<div class="absolute -top-20 -right-20 w-80 h-80 bg-primary/10 rounded-full blur-[100px] -z-10"></div>
+<div class="absolute -bottom-20 -left-20 w-80 h-80 bg-secondary/10 rounded-full blur-[100px] -z-10"></div>
+</div>
+</div>
+</section>
+<!-- Why Tech Master? Section -->
+<section class="py-32 px-8 bg-surface-container-lowest">
+<div class="max-w-7xl mx-auto">
+<div class="mb-20 text-center lg:text-left">
+<h2 class="font-headline text-5xl font-black text-on-background mb-6">Why Eazino Courses?</h2>
+<div class="h-1.5 w-24 gold-gradient rounded-full mx-auto lg:mx-0"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Feature 1: Large -->
+<div class="md:col-span-2 bento-card bg-surface-container p-12 rounded-2xl group flex flex-col justify-between">
+<div>
+<div class="w-16 h-16 rounded-xl bg-primary/10 flex items-center justify-center mb-8 border border-primary/20 group-hover:bg-primary/20 transition-colors">
+<span class="material-symbols-outlined text-primary text-4xl">school</span>
+</div>
+<h3 class="text-3xl font-headline font-extrabold mb-6">Expert-Led Curriculum</h3>
+<p class="text-on-surface-variant text-lg max-w-xl leading-relaxed">"Coding used to be intimidating. Eazino Courses' mentors broke it down into simple, logical steps. I'm now building my own SaaS application."</p>
+</div>
+<div class="mt-8 flex items-center gap-4 text-primary font-bold text-sm tracking-widest uppercase">
+<span>Explore Tracks</span>
+<span class="material-symbols-outlined text-base">arrow_forward</span>
+</div>
+</div>
+<!-- Feature 2: Small -->
+<div class="bento-card bg-surface-container p-12 rounded-2xl group">
+<div class="w-16 h-16 rounded-xl bg-primary/10 flex items-center justify-center mb-8 border border-primary/20 group-hover:bg-primary/20 transition-colors">
+<span class="material-symbols-outlined text-primary text-4xl">rocket_launch</span>
+</div>
+<h3 class="text-2xl font-headline font-extrabold mb-6">Accelerated Growth</h3>
+<p class="text-on-surface-variant leading-relaxed">"Coding used to be intimidating. Eazino Courses' mentors broke it down into simple, logical steps. I'm now building my own SaaS application."</p>
+</div>
+<!-- Feature 3: Small -->
+<div class="bento-card bg-surface-container p-12 rounded-2xl group">
+<div class="w-16 h-16 rounded-xl bg-primary/10 flex items-center justify-center mb-8 border border-primary/20 group-hover:bg-primary/20 transition-colors">
+<span class="material-symbols-outlined text-primary text-4xl">public</span>
+</div>
+<h3 class="text-2xl font-headline font-extrabold mb-6">Global Network</h3>
+<p class="text-on-surface-variant leading-relaxed">"Coding used to be intimidating. Eazino Courses' mentors broke it down into simple, logical steps. I'm now building my own SaaS application."</p>
+</div>
+<!-- Feature 4: Full Width Row -->
+<div class="md:col-span-2 bento-card bg-primary/5 border-2 border-primary/20 p-12 rounded-2xl flex flex-col md:flex-row items-center justify-between gap-10">
+<div class="flex-1">
+<h3 class="text-3xl font-headline font-extrabold mb-4">Lifetime Access</h3>
+<p class="text-on-surface-variant text-lg leading-relaxed">"Coding used to be intimidating. Eazino Courses' mentors broke it down into simple, logical steps. I'm now building my own SaaS application."</p>
+</div>
+<div class="flex-shrink-0">
+<span class="material-symbols-outlined text-primary text-8xl opacity-30">all_inclusive</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials Section -->
+<section class="py-32 px-8">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-24">
+<h2 class="font-headline text-5xl md:text-6xl font-black text-on-background mb-6">Student Success Stories</h2>
+<p class="text-secondary text-xl font-medium opacity-80">"Coding used to be intimidating. Eazino Courses' mentors broke it down into simple, logical steps. I'm now building my own SaaS application."</p>
+</div>
+<div class="grid md:grid-cols-3 gap-10 items-stretch">
+<!-- Testimonial 1 -->
+<div class="bg-surface-container-high/30 backdrop-blur-xl p-10 rounded-2xl border border-white/5 flex flex-col">
+<div class="flex gap-1 text-primary mb-8">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-lg italic text-on-surface/90 mb-10 leading-relaxed flex-grow">"Coding used to be intimidating. Eazino Courses' mentors broke it down into simple, logical steps. I'm now building my own SaaS application."</p>
+<div class="flex items-center gap-5 pt-6 border-t border-white/5">
+<img alt="Marcus J." class="w-14 h-14 rounded-lg object-cover border-2 border-primary/30" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRUy0Pk6kh2j7JlaV4fwzxfWkUxjOgQBmh9ViOFFRW7YtLWCT7WdJFw5lBAzVVib_qCcAUTxGuaAwPQLglA7XNffGY47UA4URV77Y91nxQ1bz-N6J1rXsYt5vuqARFyLAKJH-nXCzT50Z54UwIKVbI1MxPKWkZaOEgRTd-HlY_tYjNDza_uO0PG5cseEQivMDjIuvzTWD-9jP-XstD-Mk-DYhA9fILDjld42hCnuWk6agWr0UmsJu543edSNzxDgw9l4brDjAoPdeT"/>
+<div>
+<div class="font-bold text-on-background">Marcus J.</div>
+<div class="text-[10px] text-primary font-bold uppercase tracking-widest mt-0.5">Cyber Analyst</div>
+</div>
+</div>
+</div>
+<!-- Testimonial 2: Featured -->
+<div class="bg-surface-container-high p-12 rounded-2xl border-t-8 border-primary shadow-2xl scale-105 z-10 flex flex-col">
+<div class="flex gap-1 text-primary mb-8">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-xl italic text-on-surface mb-10 leading-relaxed flex-grow">"Coding used to be intimidating. Eazino Courses' mentors broke it down into simple, logical steps. I'm now building my own SaaS application."</p>
+<div class="flex items-center gap-5 pt-8 border-t border-white/5">
+<img alt="Sarah L." class="w-16 h-16 rounded-lg object-cover border-2 border-primary" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPmuDaPtWJ4c3vHPNbbqcZttCxJeJiEiaenUTSObStmeciYxFI7vwR_YjzNDoOpoGSLRsRLzSXFGNSg4-gWn0glB4gqKk-a_svCbDObtKsacpfdW6YomN8-IuX1keZ42DkTYVRUrfu20zY4kM3ire3BUwIiD5OnmztNuXoFO_UF5b7pDQKiU9FeaSvVZLBXWQ6H582W041UKwUCL0mMJi6ZwS67VjvAPu6fmqhVXKBeghPOeHZd0JxWnjskoht32NBY-DtDaF6Upal"/>
+<div>
+<div class="text-lg font-bold text-on-background">Sarah L.</div>
+<div class="text-xs text-primary font-bold uppercase tracking-widest mt-1">Founder, Bloom Agency</div>
+</div>
+</div>
+</div>
+<!-- Testimonial 3 -->
+<div class="bg-surface-container-high/30 backdrop-blur-xl p-10 rounded-2xl border border-white/5 flex flex-col">
+<div class="flex gap-1 text-primary mb-8">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-lg italic text-on-surface/90 mb-10 leading-relaxed flex-grow">"Coding used to be intimidating. Eazino Courses' mentors broke it down into simple, logical steps. I'm now building my own SaaS application."</p>
+<div class="flex items-center gap-5 pt-6 border-t border-white/5">
+<img alt="David K." class="w-14 h-14 rounded-lg object-cover border-2 border-primary/30" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCObkq2TJEP9ptwkWqDWY-tLV377CrPcnyu6BWPBrcD9bH22us4ioSU7ivqHMKaDD_CgHHxVmohtwxN3dQe6l93YLffXKkLsICZCPXKmm9QeFioJR9mPepX5BhjUYasBg8-NfpRiZ6OZJ_ljoFSm3vy6_2u77hWPkU1knICGhP3bFLobW88EwStPD23TY5x1TPPOqDL953W6aFBHgw8NFjF_Lcirf1D_L5ANn1t8w3Yp9IflsXgkT0aD-L6A9AOBGFPQuGS3xe8pyEO"/>
+<div>
+<div class="font-bold text-on-background">David K.</div>
+<div class="text-[10px] text-primary font-bold uppercase tracking-widest mt-0.5">Full-stack Developer</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-32 px-8 max-w-7xl mx-auto">
+<div class="bg-surface-container-low rounded-3xl p-16 md:p-32 text-center relative overflow-hidden shadow-2xl border border-white/5">
+<div class="absolute inset-0 gold-gradient opacity-[0.03] pointer-events-none"></div>
+<div class="relative z-10 max-w-4xl mx-auto">
+<h2 class="font-headline text-5xl md:text-7xl font-black text-on-background mb-10 leading-[1.1]">Ready to Master the <span class="text-primary underline decoration-primary/20 underline-offset-8">Next Generation</span> of Skills?</h2>
+<p class="text-xl md:text-2xl text-secondary mb-16 opacity-80 max-w-2xl mx-auto font-medium">"Coding used to be intimidating. Eazino Courses' mentors broke it down into simple, logical steps. I'm now building my own SaaS application."</p>
+<div class="flex flex-col items-center gap-8">
+<button class="gold-gradient text-on-primary px-16 py-6 rounded-lg text-2xl font-black shadow-2xl gold-glow hover:scale-105 active:scale-95 transition-transform">
+                            Enroll Now &amp; Get 20% Off
+                        </button>
+<div class="flex items-center gap-2 text-primary font-bold text-xs tracking-[0.2em] uppercase">
+<span class="material-symbols-outlined text-sm">schedule</span>
+                            Limited time offer for new students
+                        </div>
+</div>
+</div>
+<!-- Decorative background patterns -->
+<div class="absolute -bottom-20 -right-20 w-96 h-96 bg-primary/10 rounded-full blur-[120px]"></div>
+<div class="absolute -top-20 -left-20 w-96 h-96 bg-secondary/10 rounded-full blur-[120px]"></div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest w-full py-20 px-8 border-t border-white/5">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-16 max-w-7xl mx-auto">
+<div class="md:col-span-2 space-y-8">
+<div class="text-3xl font-black tracking-tighter text-primary">Eazino Courses</div>
+<p class="text-on-surface-variant max-w-md leading-relaxed text-lg">Empowering the next generation of tech leaders through the Skill Acquisition Program 3.0 and career-focused training systems built for the modern era.</p>
+<div class="flex gap-4">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary border border-white/5 cursor-pointer hover:bg-primary/20 transition-colors">
+<span class="material-symbols-outlined">public</span>
+</div>
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary border border-white/5 cursor-pointer hover:bg-primary/20 transition-colors">
+<span class="material-symbols-outlined">alternate_email</span>
+</div>
+</div>
+</div>
+<div class="space-y-8">
+<h4 class="text-primary font-extrabold text-sm uppercase tracking-widest">Platform</h4>
+<ul class="space-y-5 text-on-surface-variant font-medium">
+<li><a class="hover:text-primary transition-colors" href="#">Courses</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Mentorship</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Success Stories</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">FAQ</a></li>
+</ul>
+</div>
+<div class="space-y-8">
+<h4 class="text-primary font-extrabold text-sm uppercase tracking-widest">Company</h4>
+<ul class="space-y-5 text-on-surface-variant font-medium">
+<li><a class="hover:text-primary transition-colors" href="#">About Us</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Careers</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Privacy Policy</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Terms of Service</a></li>
+</ul>
+</div>
+</div>
+<div class="max-w-7xl mx-auto mt-20 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
+<p class="text-sm text-on-surface-variant font-medium">© 2024 Eazino Courses. All rights reserved.</p>
+<div class="flex gap-8 text-xs font-bold uppercase tracking-widest text-primary/60">
+<a class="hover:text-primary transition-colors" href="#">Instagram</a>
+<a class="hover:text-primary transition-colors" href="#">Twitter</a>
+<a class="hover:text-primary transition-colors" href="#">LinkedIn</a>
+</div>
+</div>
+</footer>
+</body></html>
